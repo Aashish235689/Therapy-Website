@@ -412,7 +412,7 @@ function changePage(x){
         // console.log(string);
         const stars=document.querySelectorAll(string);
         // console.log(rating[i]);
-        const x=Math.floor(rating[i]);
+        const x=Math.floor(modified_rating[i]);
         for(let j=0;j<stars.length;j++)
         stars[j].style.color="black";
         for(let j=0;j<x;j++)
