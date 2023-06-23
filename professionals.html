@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleProf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body >
+    
+        <nav class="navbar" onclick="closeside()">
+            <a href="javascript:void(0)" class="open-sidebar">	&#9776	</a>
+            <div class="list">
+                <ul class="list1">
+                    
+                    <li class="nav-items home"><a href="index.html">Home</a></li>
+                    <li class="nav-items prof"><a href="professionals.html">Professionals</a></li>
+                </ul>
+                <ul class="list2">
+                <li class="nav-items contact"><a href="contact.html">Contact us</a></li>
+                <li class="nav-items help"><a href="https://www.samhsa.gov/find-help" target="_blank">Helpline</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="heading" onclick="closeside()">
+            <h2 id="heading">Our Top Professionals</h2>
+        </div>
+        <div class="sidebar" onclick="specify('all')" onclick="closeside(1)">
+            <div class="sidebarClose">
+                
+                <a href="javascript:void(0)" class="close"></a>
+            </div>
+            <h2 class="sidebar-heading">Sidebar</h2>
+                <div class="slidecontainer minbar" >
+                    <h5 class="range-heading">Min Fee : &#8377
+                        <span id="min-value">0</span>
+                    </h5>
+                    <input onChange="rangeSlide(this.value,'min')"type="range" min="0" max="15000" value="0" class="slider minSlider" id="myRange">
+                    
+                    <h5 class="range-heading" >Max Fee : &#8377
+                        <span id="max-value">15000</span></h5>
+                    <input onChange="rangeSlide(this.value,'max')" type="range" min="0" max="15000" value="15000" class="slider maxSlider" id="myRange">
+                    
+                    <h5 class="range-heading">Min-Rating</h5>
+                    
+                    <span class="fa fa-star stars 1" onclick="changeRating(1)"></span>
+                    <span class="fa fa-star stars 2 " onclick="changeRating(2)"> </span>
+                    <span class="fa fa-star stars 3 " onclick="changeRating(3)"></span>
+                    <span class="fa fa-star stars 4" onclick="changeRating(4)"></span>
+                    <span class="fa fa-star stars 5" onclick="changeRating(5)"></span>
+                    
+                     
+                    
+                </div>
+              
+                <div class="types">
+                    <a href="javascript:void(0)"  id="marriage" name="marriage" onclick="specify('Marriage and Family Counseling')">
+                        Marriage and Family Counseling
+                    </a>
+                  </div>
+               <div class="types">
+                <a href="javascript:void(0)"id="addiction" name="addiction" onclick="specify('Addiction Therapy')">Addiction Therapy</a>
+               </div>
+               <div class="types">
+                <a href="javascript:void(0)"id="behavior" name="behavior" onclick="specify('Behaviour Counseling')">Behavioral Counseling</a>
+               </div>
+               <div class="types">
+                <a href="javascript:void(0)"id="psych" name="psych" onclick="specify('Psychiatrist')">Psychiatrists</a>
+               </div>
+               <div class="types">
+                <a href="javascript:void(0)"id="trauma" name="trauma" onclick="specify('Trauma Therapy')">Trauma Therapy</a>
+            
+               </div>
+               <div class="types">
+                <a href="javascript:void(0)"id="child" name="child" onclick="specify('Child Therapy')">Child Therapy</a>
+               </div>
+              </div>
+        </div>
+        <div class="container"  onclick="closeside()">
+            <button class="therapists thera1" onclick="openProfile(1)">
+            <img src="https://placehold.jp/30x30.png" alt="profile-pic" class="profile-pic">
+            <h5 class="name">name0</h5>
+            <h4 class="speciality">speciality</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            
+            </button>
+            <button class="therapists thera2" onclick="openProfile(2)">
+                <img src="https://placehold.jp/30x30.png" alt="profile-pic" class="profile-pic">
+                <h5 class="name">name1</h5>
+                <h4 class="speciality">speciality</h4>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            
+            </button>
+            <button class="therapists thera3" onclick="openProfile(3)">
+                <img src="https://placehold.jp/30x30.png" alt="profile-pic" class="profile-pic">
+                <h5 class="name">name2</h5>
+                <h4 class="speciality">speciality</h4>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                
+            </button>
+    
+             <button class="therapists thera4" onclick="openProfile(4)">
+            <img src="https://placehold.jp/30x30.png" alt="profile-pic" class="profile-pic">
+            <h5 class="name">name3</h5>
+            <h4 class="speciality">speciality</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+           
+            </button>
+            <button class="therapists thera5" onclick="openProfile(5)">
+            <img src="https://placehold.jp/30x30.png" alt="profile-pic" class="profile-pic">
+            <h5 class="name">name4</h5>
+            <h4 class="speciality">speciality</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+            
+            </button>
+            <button class="therapists thera6" onclick="openProfile(6)">
+            <img src="https://placehold.jp/30x30.png" alt="profile-pic" class="profile-pic">
+            <h5 class="name">name5</h5>
+            <h4 class="speciality">speciality</h4>
+            <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+    
+            </button>
+    
+            <button class="therapists thera7" onclick="openProfile(7)">
+                <img src="https://placehold.jp/30x30.png" alt="profile-pic" class="profile-pic">
+                <h5 class="name">name6</h5>
+                <h4 class="speciality">speciality</h4>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+        
+            </button>
+             <button class="therapists thera8" onclick="openProfile(8)">
+            <img src="https://placehold.jp/30x30.png" alt="profile-pic" class="profile-pic">
+            <h5 class="name">name7</h5>
+            <h4 class="speciality">speciality</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+    
+            </button>
+      
+            <button class="therapists thera9" onclick="openProfile(9)">
+     
+            <img src="https://placehold.jp/30x30.png" alt="profile-pic" class="profile-pic">
+            <h5 class="name">name8</h5>
+            <h4 class="speciality">speciality</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            
+            </button>
+    
+            <button class="therapists thera10" onclick="openProfile(10)">
+            <img src="https://placehold.jp/30x30.png" alt="profile-pic" class="profile-pic">
+            <h5 class="name">name9</h5>
+            <h4 class="speciality">speciality</h4>
+            <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            </div>
+            </div>
+            
+            
+            </button>
+
+            <div class="current" onclick="closeside()">
+                <h4 class="currentPage">Page 1 of 11</h4>
+                </div>
+                <!-- <div class="buttons"> -->
+                    <div class="btn-list">
+                        <div class="move mov1"  onclick="closeside()">
+               
+                            <button class="btn btn1" onclick="changePage(1)">1</button>
+                            <button class="btn btn2" onclick="changePage(2)">2</button>
+                            <button class="btn btn3" onclick="changePage(3)">3</button>
+                            <button class="btn btn4" onclick="changePage(4)">4</button>
+                            <button class="btn btn5" onclick="changePage(5)">5</button>
+                            <button class="btn btn6" onclick="changePage(6)">6</button>
+                            <button class="btn btn7" onclick="changePage(7)">7</button>
+                            <button class="btn btn8" onclick="changePage(8)">8</button>
+                            <button class="btn btn9" onclick="changePage(9)">9</button>
+                            <button class="btn btn10" onclick="changePage(10)">10</button>
+                            <button class="btn btn11" onclick="changePage(11)">11</button>
+                        </div>
+                 
+                    </div>
+                
+            <!-- </div> -->
+            
+    
+    <script src="javascriptProf.js"></script>
+</body>
+</html>

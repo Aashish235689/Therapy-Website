@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    background-color:#ecf2f8;
+    /* margin-top:7%; */
+     font-family:"Barlow Semi Condensed"; 
+}
+body{
+    /* margin-top:10px; */
+    padding-top:1%;
+    position:relative;
+    /* background-color:#F2E7DC; */
+    background-color:#ecf2f8;
+    color:#ecf2f8;
+    /* color:black; */
+    /* padding-top:11%; */
+    width:100%;
+    z-index: 1;
+    margin-top:5vh;
+  }
+/* @media (min-width:500px){
+    .body{
+        margin-top:;
+    }
+} */
+
+.navbar{
+    
+    display:flex;
+    z-index:2;
+    padding:2%;
+    position:fixed;
+    width:100%;
+    top:0px;
+    height:40px;
+    align-items: center;
+    background-color: #48556a;
+}
+
+.heading{
+    margin-top:10px;
+    /* top */
+    width: 100%;
+    display:flex;
+    /* grid-area:1/3/4/9; */
+    color: #027373;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.list{
+    /* padding-left:3%; */
+    display:flex;
+    width:100%;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* width:100%; */
+}
+
+.list1,.list2{
+    display:flex;
+    /* grid-template-columns: repeat(20,1fr);
+    grid-template-rows: 1fr; */
+    /* background-color:chocolate; */
+    width:100%;
+} 
+
+
+.list{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+.list1,.list2{
+    display:flex;
+    /* background-color:chocolate; */
+    width:150px;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display:inline;
+}
+
+.nav-items{
+    display:inline;
+    /* color:#038C7F; */
+    height:40px;
+    text-align: center;
+    /* border:2px solid red; */
+    
+}
+ a {
+    color:#0D0D0D;
+    /* padding: 30px 0px 0px 0px; */
+    
+    text-align: center;
+    text-decoration: none;
+  }
+
+ a:link, a:visited {
+    /* background-color: white; */
+    /* color: black; */
+    /* border: 2px solid green; */
+    border-radius: 3px;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover,a:active {
+    background-color: #374152;
+    /* color: white; */
+  }
+
+.complaint,.therapist,.free{
+   /* border:2px solid red; */
+   margin-bottom:10px;
+   border-radius: 3px;
+    width:90%;
+    left:5%;
+    position: relative;
+    height:200px;
+    font-size: 18px;
+    padding:20px;
+    box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.75);
+}
+.complaint{
+    background-color: #7541c8;
+    /* color:#cfcfcf; */
+}
+.therapist{
+    background-color: #48556a;;
+    /* color:#cfcfcf; */
+}
+.free{
+    background-color: white;
+    color:#19212e;
+}
+.therapist .sub-heading{
+    color:#9F81D0;
+}
+.complaint .sub-heading{
+    color:#869DC4;
+}
+.sub-heading{
+    padding:20px;
+    color: #027373;
+}
+.email,.phone{
+    padding-left:20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.complaint,.therapist,.free{
+    padding:1.2rem;
+}
+
+@media (min-width:700px){
+    body{
+       margin-top:7vh;
+    }
+    .container{
+        width:70%;
+        position: relative;
+        left:15%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-container{
+        height:auto;
+        display:flex;
+        width:100%;
+    }
+    .complaint,.therapist{
+        padding:0;
+        height:40vh;
+        /* padding-left:px; */
+        width:50%;
+    }
+    .free{
+        height:40vh;
+        width:100%;
+        align-self: stretch;
+        justify-self: stretch;
+    }
+}
+
+@media (min-width:900px){
+    html{
+        font-size:16;
+    }
+    .complaint,.therapist{
+        font-size: 1.4rem;
+    }
+    .free{
+        font-size:1.6rem;
+    }
+}
+
+@media (max-width:300px){
+    html{
+        font-size: 14px;
+    }
+    .complaint,.therapist,.free{
+        padding:0.8rem;
+    }
+}
+
+@media (min-width:900px) and (min-height:700px){
+    .complaint,.therapist,.free{
+        padding:2rem;
+    }
+    .free{
+        padding:3rem 4rem 0rem 4rem;
+    }
+    .sub-heading{
+        margin-bottom: 15px;
+    }
+    .email{
+        margin-bottom: 10px;
+    }
+}

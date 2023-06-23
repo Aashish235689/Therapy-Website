@@ -1,0 +1,495 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    background-color:#dae8f5;
+    /* margin-top:7%; */
+     font-family:"Barlow Semi Condensed"; 
+}
+body{
+    /* margin-top:10px; */
+    padding-top:1%;
+    /* position:relative; */
+    background-color:#dae8f5;
+    color:black;
+    /* padding-top:11%; */
+    width:100vw;
+    z-index: 1;
+    margin-top:5vh;
+    /* height:100vh; */
+  }
+/* @media (min-width:500px){
+    .body{
+        margin-top:;
+    }
+} */
+
+.navbar{
+    
+    display:flex;
+    z-index:2;
+    padding:2%;
+    position:fixed;
+    width:100%;
+    top:0px;
+    height:40px;
+    align-items: center;
+    background-color: #232B33;
+}
+
+.heading{
+    /* top */
+    width: 100%;
+    display:flex;
+    /* grid-area:1/3/4/9; */
+    color: #232B33;
+    justify-content: center;
+}
+.open-sidebar{
+    display:inline;
+    /* font-size: 1rem; */
+    /* cursor: pointer; */
+    /* background-color: #2b9348; */
+    /* color: white; */
+    /* padding: 10px 15px; */
+    /* border: none; */
+}
+
+.open-sidebar:hover{
+    background-color :none;
+}
+.list{
+    padding-left:3%;
+    display:flex;
+    width:100%;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* width:100%; */
+}
+
+.list1,.list2{
+    margin-top:1vh;
+    display:flex;
+    /* grid-template-columns: repeat(20,1fr);
+    grid-template-rows: 1fr; */
+    /* background-color:chocolate; */
+    width:100%;
+} 
+
+.list1{
+    justify-content: flex-start;
+}
+.list2{
+    justify-content: flex-end;
+}
+.prof{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.contact{
+    grid-column-start: 12;
+    grid-column-end: 18;
+}
+
+.help{
+    grid-column-start: 18;
+}
+
+.nav-items{
+     padding-left:2%;
+}
+
+.nav-items{
+    display:inline;
+    /* color:#038C7F; */
+    height:40px;
+    text-align: center;
+    /* border:2px solid red; */
+    
+}
+
+.navbar a {
+    color:#6A8199;
+    /* padding: 30px 0px 0px 0px; */
+    
+    text-align: center;
+    text-decoration: none;
+  }
+
+.navbar a:link,.navbar a:visited {
+    /* background-color: white; */
+    /* color: black; */
+    /* border: 2px solid green; */
+    border-radius: 3px;
+    padding: 7px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .navbar a:hover,.navbar a:active {
+    background-color: #3E4B59;
+    /* color: white; */
+  }
+
+.heading{
+    margin-top:10px;
+
+    /*width: 100%;
+    display:flex;
+    grid-area:1/3/4/9;
+    color: black;
+    justify-content: center; */
+}  
+.sidebarClose{
+    width:auto;
+    position: absolute;
+    right:2px;
+    /* top:0px */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar{
+    position: relative;
+    /* padding-top:50px; */
+    visibility:hidden;
+    position: absolute;
+    /* display:fixed; */
+    top:0;
+    z-index:3;
+    background-color: #042940;
+    width:275px;
+    height:105vh;
+    color:#70c2be;
+    /* transition:ease-in-out; */
+}
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #70c2be;
+    display: block;
+    transition: 0.3s;
+}
+
+.range-heading{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #70c2be;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar-heading{
+    padding:30px 0px 20px 40px;
+}
+
+.slidecontainer{
+    width:100%;
+    padding:10px 10px 20px 40px;
+}
+
+.slider {
+    width:80%;
+    /* width: 400px; */
+    height: 15px;
+    -webkit-appearance: none;
+    background: #AB973A;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* background: #00fd0a; */
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -407px 0 0 400px #444533;
+  }
+
+ 
+.container{
+    margin-top:10px;
+    height:500px;
+    /* background-color:#86A69C; */
+    height:auto;
+    width:100vw;
+}
+/* 
+.thera6 .checked{
+    color:;
+} */
+
+.therapists{
+    width:100%;
+    height:70px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.therapists:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.profile-pic{ 
+    width:40px;
+    height:40px;
+    border-radius:40px;
+}
+.name,.speciality,.profile-pic{
+    padding:1%;
+
+}
+.name{
+    width:20%;
+}
+.speciality{
+    padding-left: 1.5%;
+    font-size: 0.75rem;
+    width: 30%;
+    /* display: absolute; */
+    /* left:20px; */
+}
+.therapists{
+    margin:5px;
+    background-color: #465766;
+    box-shadow: 6px 8px 5px 0px rgba(0,0,0,0.82);
+}
+.thera1,.thera3,.thera5,.thera9,.thera7{
+    background-color: #728EA6;
+}
+/* .checked{
+    color:orange;
+} */
+
+.rating{
+    position: absolute;
+    right: 0px;
+    padding:3%;
+}
+
+.current{
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    width:100vw;
+    bottom:30px;
+    position: absolute;
+    color: #232B33;
+}
+
+.btn-list{
+    display: flex;
+    justify-content: center;
+}
+
+.move{
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+.btn{
+    margin:1px;
+    padding:2px;
+    width:20px;
+    transition-duration: 0.4s;
+    border-radius: 20px;
+    border:none;
+    background-color: #232B33;
+    color:white;
+}
+
+.btn:hover{
+    background-color: #728EA6;
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.sidebar{
+    position:absolute;
+    top:-4%;
+    height:170vh;
+}
+body{
+    position: relative;
+    height:160vh;
+}
+
+/* @media minw */
+
+@media (max-width:300px){
+   .sidebar{
+    width:80%;
+   }
+}
+
+@media (max-height:670px){
+    body{
+        /* margin-top: 7vh; */
+    }
+    .container{
+        height:auto;
+    }
+    .sidebar{
+        height:170vh;
+    }
+    body{
+        position: relative;
+        height:160vh;
+    }
+}
+
+
+
+
+@media (min-width:576px){
+    /* .sidebar{
+        height:130%;
+    } */
+    /* .heading{
+        margin-top:100px;
+    } */
+    .name{
+        width:auto;
+    }
+    .speciality{
+        width:auto;
+    }
+    .name,.speciality,.profile-pic{
+        margin:5%;
+    }
+    .profile-pic{
+        width:50px;
+        border-radius: 50px;
+        height:50px;
+    }
+    .container{
+        row-gap: 4px;
+        column-gap: 2px;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr) ;
+        grid-auto-flow: row;
+    }
+    .therapists{
+        position: relative;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+    }
+    .rating{
+        position:absolute;
+        width:100%;
+        display:flex;
+        bottom:2px;
+        justify-content: center;
+    }
+    .thera9{
+        grid-column: 2/3;
+    }
+    .thera10{
+        grid-column:3/4;
+    }
+
+}
+@media (min-width:700px){
+    
+    html{
+        font-size: 20px;
+    }
+    .profile-pic{
+        width:80px;
+        border-radius: 80px;
+        height:80px;
+    }
+
+    .list1,.list2{
+        margin-top:0;
+    }
+    
+    body{
+        /* margin-top:7vh; */
+        position: relative;
+        height:160vh;
+     }
+     
+}
+@media (min-height:599px){
+    .sidebar{
+        height:140vh;
+    }
+    body{
+        position: relative;
+        height:130vh;
+    }
+}
+
+@media (min-height:800px){
+    .sidebar{
+        top:-5%;
+        height:120vh;
+    }
+    body{
+        position: relative;
+        height:110vh;
+    }
+}
+
+@media (min-width:900px){
+    html{
+        font-size: 24px;
+    }
+    .sidebar{
+        height:180vh;
+    }
+    body{
+        position: relative;
+        height:174vh;
+        
+    }
+    
+    .container{
+        position: relative;
+        width:70%;
+        left:15%;
+    }
+}
+
+@media (min-width:1000px) and (min-height:700px){
+    .sidebar{
+        height:150vh;
+    }
+    body{
+        position: relative;
+        height:140vh;
+    }
+}
+
+@media (min-height:900px){
+    
+    .sidebar{
+        height:110vh;
+    }
+    body{
+        position: relative;
+        height:100vh;
+    }
+}
+
+
+
