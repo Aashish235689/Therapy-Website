@@ -1,4 +1,4 @@
-const images=["/one-on-one.jpg","/family.jpg","/child-therapy.jpg","/drug.jpg"];
+const images=["https://github.com/Aashish235689/Therapy-Website/blob/main/one-on-one.jpg?raw=true","https://github.com/Aashish235689/Therapy-Website/blob/main/family.jpg?raw=true","https://github.com/Aashish235689/Therapy-Website/blob/main/child-therapy.jpg?raw=true","https://github.com/Aashish235689/Therapy-Website/blob/main/drug.jpg?raw=true"];
 let curr=0;
 
 function plusSlides(x){
