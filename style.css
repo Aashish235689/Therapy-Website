@@ -114,7 +114,7 @@ width: 100%;
 }
 .image:hover{
     cursor: pointer;
-    opacity: 0.9;
+
     /* transform: scale(1.001); */
   }
 @keyframes fade {
